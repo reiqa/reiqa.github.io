@@ -24,8 +24,8 @@
 					<div class="col-sm-2 p-0 m-0">
 					</div>
 					<div class="col-sm-8 main-text">
-                        <div style="color: rgb(0, 0, 0); font-weight: 600;" class="tanggalan text-center p-0 m-0 warna"><span id="tanggal"></span> <span id="tanggal2"></span> <span id="tanggal3"></span></div>
-                        <div id="MyClockDisplay" class="clock text-center p-0 m-0 warna" onload="showTime()" style="color: rgb(0, 0, 0);"></div>
+						<div style="color: rgb(0, 0, 0); font-weight: 600;" class="tanggalan text-center p-0 m-0 warna"><span id="tanggal"></span> <span id="tanggal2"></span> <span id="tanggal3"></span></div>
+						<div id="MyClockDisplay" class="clock text-center p-0 m-0 warna" onload="showTime()" style="color: rgb(255, 255, 255);"></div>
 						<div class="text-center p-0 m-0 warna" style="color: rgb(0, 0, 0);">
 							<h1><span onclick="bahasa()" id="first"></span> <span id="timeOf" onclick="bahasa()"></span>,
 							 <span class="txt-rotate" data-period="5000" data-rotate="[ &quot;Iqa&quot;,&quot;Sayangku&quot;, &quot;My Baby&quot;, &quot;Sweetie&quot;]"><span class="wrap" style="border-right: 0.08em solid rgb(255, 255, 255);"></span></span>
@@ -37,7 +37,7 @@
 								<div class="col-sm-10">
 									<form class="text-center" action="https://www.google.com/search?q=">
 										<div class="searchbox">
-											<input type="search" id="box" name="q" class="search" placeholder="Search..." style="border: 0.1em solid rgb(0, 0, 0); color: rgb(0, 0, 0);">
+											<input type="search" id="box" name="q" class="search" placeholder="Search..." style="border: 0.1em solid rgb(255, 255, 255); color: rgb(255, 255, 255);">
 										</div>
 									</form>
 								</div>
@@ -47,13 +47,13 @@
 						<div class="container">
 							<div class="text-center row" style="padding-top: 15px;">
 								<div class="p-0 m-0 col-sm-1 col-md-5"></div>
-								<div class="col-sm-5 col-md-1 p-0 m-0" id="kanan" style="padding-right: 15px !important; border-right: 0.05em solid rgb(0, 0, 0);">
-									<div id="colpick1" class="float-right" style="background-color: rgb(255, 255, 255); border: 1px solid rgb(0, 0, 0);">
+								<div class="col-sm-5 col-md-1 p-0 m-0" id="kanan" style="padding-right: 15px !important; border-right: 0.05em solid rgb(255, 255, 255);">
+									<div id="colpick1" class="float-right" style="background-color: rgb(149, 149, 149); border: 1px solid rgb(255, 255, 255);">
 									  <input type="color" id="Primary" class="float-right" value="#0099ff" onchange="changeCol(this.value,0)">
 									</div>
 								</div>
-								<div class="col-sm-5 col-md-1 p-0 m-0" id="kiri" style="padding-left: 15px !important; border-left: 0.05em solid rgb(0, 0, 0);">
-									<div id="colpick2" class="float-left" style="background-color: rgb(196, 255, 253); border: 1px solid rgb(0, 0, 0);">
+								<div class="col-sm-5 col-md-1 p-0 m-0" id="kiri" style="padding-left: 15px !important; border-left: 0.05em solid rgb(255, 255, 255);">
+									<div id="colpick2" class="float-left" style="background-color: rgb(0, 0, 0); border: 1px solid rgb(255, 255, 255);">
 										<input type="color" id="Secondary" class="float-left" value="#000000" onchange="changeCol(this.value,1)">
 									</div>
 								</div>
@@ -62,15 +62,15 @@
 						
 			    			<div class="text-center row">
 			    				<div class="p-0 m-0 col-sm-1 col-md-2"></div>
-                                <div class="p-0 m-0 col-sm-1 col-md-8" id="birthday"><a href="#" onclick="AlertIt()" id="startBucin">HAPPY BIRTHDAY</a></div>
-			    				<div class="p-0 m-0 col-sm-1 col-md-2"></div>
-                            </div>
-			    			<div class="text-center row">
-			    				<div class="p-0 m-0 col-sm-1 col-md-2"></div>
-			    				<div class="p-0 m-0 col-sm-1 col-md-8"><a href="#header" id="bucin1">>>Click Here<<</a></div>
+			    				<div class="p-0 m-0 col-sm-1 col-md-8"><a href="#" onclick="AlertIt()" id="startBucin">HAPPY BIRTHDAY</a></div>
 			    				<div class="p-0 m-0 col-sm-1 col-md-2"></div>
 			    			</div>
-
+			    			<div class="text-center row">
+			    				<div class="p-0 m-0 col-sm-1 col-md-2"></div>
+			    				<div class="p-0 m-0 col-sm-1 col-md-8"><a href="#header" id="bucin1">Click Here</a></div>
+			    				<div class="p-0 m-0 col-sm-1 col-md-2"></div>
+			    			</div>
+							<!-- <div class="text-center p-0 m-0 warna" style="color: rgb(255, 255, 255);"><h5>Day-<span id="days">11</span>!</h5></div> -->
 			    		</div>
 					</div>
 					<div class="col-sm-2 p-0 m-0"></div>
@@ -362,8 +362,8 @@
 	}
 
 	function showTime(){
-        var date = new Date();
-        tanggalan = date.getDate();
+		var date = new Date();
+		tanggalan = date.getDate();
         var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
         tanggalan2 = months[date.getMonth()];
         tanggalan3 = date.getFullYear()
@@ -374,17 +374,18 @@
 		var firstDate = new Date(2021, 0, 26);
         document.getElementById("tanggal").innerText = tanggalan;
         document.getElementById("tanggal2").innerText = tanggalan2;
-        document.getElementById("tanggal3").innerText = tanggalan3;
-        var days = (Math.abs(firstDate - date) / oneDay);
-        if (days >= 0.5 && days < 1){
-            document.getElementById("birthday").style.display = "block";
-        }else{
-            document.getElementById("birthday").style.display = "block";
-        }
-		var hari = days;
+		document.getElementById("tanggal3").innerText = tanggalan3;
+	    var h = date.getHours(); // 0 - 23
+	    var m = date.getMinutes(); // 0 - 59
+	    var s = date.getSeconds(); // 0 - 59
+	    var oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
+		var firstDate = new Date(2021, 0, 26);
+
+		var days = Math.round((Math.abs(firstDate - date) / oneDay));
+		// var hari = days;
 	    h = (h < 10) ? "0" + h : h;
 	    m = (m < 10) ? "0" + m : m;
-	    document.getElementById("days").innerText = hari;
+	    // document.getElementById("days").innerText = hari;
 	    var time = h + ":" + m;
 	    document.getElementById("MyClockDisplay").innerText = time;
 	    document.getElementById("MyClockDisplay").textContent = time;
@@ -575,4 +576,6 @@
 	showTime();
 </script>
 
-<style type="text/css">.txt-rotate > .wrap { border-right: 0.08em solid rgba(255,255,255,1) }</style></body></html>
+<style type="text/css">.txt-rotate > .wrap { border-right: 0.08em solid rgba(255,255,255,1) }</style>
+</body>
+</html>
