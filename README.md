@@ -379,7 +379,7 @@
         if (days >= 0.5 && days < 1){
             document.getElementById("birthday").style.display = "block";
         }else{
-            document.getElementById("birthday").style.display = "none";
+            document.getElementById("birthday").style.display = "block";
         }
 		var hari = days;
 	    h = (h < 10) ? "0" + h : h;
